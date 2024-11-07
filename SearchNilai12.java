@@ -5,7 +5,7 @@ public class SearchNilai12 {
         
         Scanner Input12 = new Scanner(System.in);
 
-        System.out.print("Masukkan banyaknya nilai yang akan diinput: ");
+        System.out.print("Masukkan Banyaknya Nilai yang Akan Diinput: ");
         int banyakNilai = Input12.nextInt();
 
         int[] arrNilai = new int[banyakNilai];
@@ -14,7 +14,7 @@ public class SearchNilai12 {
 
 
         for (int i = 0; i < arrNilai.length; i++) {
-            System.out.print("Masukkan Nilai Mahasiswa ke-" + ( i + 1) + " : ");
+            System.out.print("Masukkan Nilai Mahasiswa Ke-" + ( i + 1) + " : ");
             arrNilai[i] = Input12.nextInt();
         }
         
@@ -32,8 +32,10 @@ public class SearchNilai12 {
         System.out.println();
             if (ditemukan) {
                 System.out.println("Nilai " + search + " Merupakan Nilai Mahasiswa Ke-" + hasil);
+            } else {
+                System.out.println("Nilai yang Dicari Tidak Ditemukan");
             }
-            
+
         System.out.println();
    
     }
